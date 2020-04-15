@@ -1,0 +1,42 @@
+{
+  "name": "nice-cloud-config-client",
+  "version": "1.0.0",
+  "description": "Spring Cloud Config Client for NodeJS",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "lint:fix": "standard --fix",
+    "lint": "standard",
+    "test:unit": "mocha tests/test.js",
+    "test": "npm run lint && nyc npm run test:unit",
+    "doc": "jsdoc index.js lib --pedantic --verbose -R README.md -d doc"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "keywords": [
+    "spring cloud config",
+    "configuration",
+    "client",
+    "config",
+    "spring",
+    "spring cloud",
+    "cloud"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattross34/nice-cloud-config-client.git"
+  },
+  "author": "Matthew Ross",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc": "^3.6.3",
+    "mocha": "^6.2.2",
+    "nock": "^11.6.0",
+    "nyc": "^14.1.1",
+    "standard": "^14.3.1"
+  }
+}

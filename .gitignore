@@ -1,0 +1,7 @@
+*.log
+node_modules/
+.idea/
+doc/
+.vscode/
+coverage/
+.nyc_output/
